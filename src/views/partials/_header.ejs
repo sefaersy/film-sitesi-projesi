@@ -1,0 +1,61 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <div class="container px-4 px-lg-5">
+      <div class="d-flex justify-content-start">
+        <a href="/yonetim">
+            <button type="button" class="btn btn-warning btn-lg text-white">Ana Sayfa</button>
+          </a>
+       </div>
+       <div class="container text-center">
+        <a href="/abonelik">
+            <button type="button" class="btn btn-danger btn-lg text-white">Abone Ol</button>
+          </a>
+       </div>
+              <div class="container text-center">
+                <a href="/kredi">
+                    <button type="button" class="btn btn-success btn-lg text-white">Kredi Satın Al</button>
+                  </a>
+              </div>
+              <div class="container text-center">
+                <a href="/yonetim/alinan">
+                    <button type="button" class="btn btn-secondary btn-lg text-white">Satın Alınan Filmler</button>
+                  </a>
+              </div>
+              <div class="container text-center">
+                <a href="/yonetim/kiralanan">
+                    <button type="button" class="btn btn-info btn-lg text-white">Kiraladığın Filmler</button>
+                </a>
+              </div>
+        <div class="modal-footer">
+            <a class="btn btn-danger text-white" href="/logout">Çıkış Yap</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="container d-flex justify-content-end text-white">
+            <h5 class="fw-bolder">  Toplam Kredin:  <%- totalCredit %></h5>
+          </div>
+        
+          <div class="container">
+            <div class="input-group">
+                <div class="form-outline">
+                  <input type="search" id="search" class="form-control" />
+                  <label class="form-label" for="form1">Search</label>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-primary" onclick="search()">
+                    <i class="bi bi-search"></i>
+                  </button></div>
+              </div>
+          </div>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <form class="d-flex">
+            </form>
+        </div>
+    </div>
+</nav>
+<!-- Header-->
+<header class="bg-warning py-1">
+    <div class="container px-4 px-lg-5 my-5">
+        <div class="text-center text-dark">
+            <h1 class="display-4 fw-bolder">Film Siteme Hoş Geldiniz...</h1>
+        </div>
+    </div>
+</header>

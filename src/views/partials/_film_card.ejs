@@ -1,0 +1,15 @@
+<div class="col mb-5 h-100">
+    <div  class="card" style="background-color:currentColor; height: 20rem;" >
+        <!-- film details-->
+        <div class="card-body" style="background-image:url('<%= film.image %>');">
+            <div class="text-center"></div>
+        </div>
+        <!-- film actions-->
+        <div class="card-footer p-1 border-top-0 bg-transparent" style="display: flex;">
+            <div class="text-center"  style="flex:1"><a onclick="film_purchase('<%- film._id %>')" class="btn satinal mt-auto">Satın Al</a></div>
+            <% if (existing_subscription &&  existing_subscription._id) { %> 
+                <div class="text-center" style="flex:1"><a onclick="filmRent('<%- film._id %>')" class="btn kirala mt-auto">Kirala</a></div>
+            <% } %>
+        </div>
+    </div>
+</div>
